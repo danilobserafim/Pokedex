@@ -83,17 +83,16 @@ button img {
 
 @media (max-width: 950px) {
     #containerImage{
-padding: 32px 0;
+        padding: 32px;
+        height: auto;
     }
     #containerImage h1{
         font-size: 3rem;
-        margin: 0 16px;
     }
     #containerImage img{
         height: auto;
         max-height: 90vh;
         margin-bottom: 0;
-        max-height: 100%;
     }
     .card{
         border: none;
