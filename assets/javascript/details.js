@@ -31,6 +31,6 @@ async function DetailsPokemon(id) {
         )
 }
 function Back() {
-    window.location.href = "../../index.html"
+    window.location.href = "../../"
 }
 pageDetails.onload = DetailsPokemon(id)
