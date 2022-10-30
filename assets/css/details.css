@@ -86,10 +86,10 @@ button img {
     #containerImage{
         padding: 32px;
         height: auto;
+        gap: 8px;
     }
     #containerImage h1{
         font-size: 3rem;
-        margin-top: -8px;
     }
     #containerImage img{
         height: auto;
