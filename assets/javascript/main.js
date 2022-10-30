@@ -1,3 +1,6 @@
+const urlParams = new URLSearchParams(window.location.search);
+const thisPage = urlParams.get('page')
+
 async function SelectPoke(pokeId) {
     const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokeId}/` ,{method:'get'})
     const data = await response.json()
@@ -6,11 +9,11 @@ async function SelectPoke(pokeId) {
 function ShowDetails(id) {
     window.location.href = `./pages/details.html?id=${id}`
 }
-async function ShowPokemons(page) {
+async function ShowPokemons() {
     
     const cards = document.getElementById("cards")
     cards.innerHTML = ''
-    await fetch(`https://pokeapi.co/api/v2/pokemon?limit=66&offset=${page * 11}`, {method:'get'})
+    await fetch(`https://pokeapi.co/api/v2/pokemon?limit=66&offset=${thisPage? thisPage * 11: 0}`, {method:'get'})
     .then(response => response.json())
     .then(data => data.results.map(async (pokemon)=>{
 
