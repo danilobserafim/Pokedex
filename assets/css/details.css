@@ -74,7 +74,7 @@ button img {
 .card h2{
 
     margin: 32px 0;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 .card span{
     margin-top: -16px;
@@ -101,7 +101,7 @@ button img {
         border: none;
     }
     #types{
-        top: 16px;
+        top: 32px;
         right: 16px;
     }
 
