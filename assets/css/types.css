@@ -1,0 +1,70 @@
+.water{
+    background: linear-gradient(to right bottom, aqua, blue);
+}
+.grass{
+    background: linear-gradient(to right bottom, green, white);
+
+}
+.fire{
+    background: linear-gradient(to right bottom, red, pink);
+}
+.rock{
+    background: linear-gradient(to right bottom, gray, white);
+
+}
+.poison{
+    background: linear-gradient(to right bottom, yellowgreen, green);
+}
+.flying{
+    background: linear-gradient(to right bottom, aqua, black);
+}
+.fighting{
+    background: linear-gradient(to right bottom, red, rgb(82, 0, 0));
+}
+.dark{
+    background: linear-gradient(to right bottom, purple, black);
+
+}
+.fairy{
+    background: linear-gradient(to right bottom, rgb(0, 131, 65), aqua);
+    
+}
+.ground{
+    background: linear-gradient(to right bottom, rgb(44, 0, 0), rgb(180, 0, 0));
+
+}
+.bug{
+    background: linear-gradient(to right bottom, green, yellowgreen);
+}
+.ghost{
+    background: linear-gradient(to right bottom, rgb(255, 0, 191), rgb(58, 0, 43));
+
+}
+.steel{
+    background: linear-gradient(to right bottom, rgb(31, 31, 31), rgb(192, 192, 192),rgb(126, 126, 126));
+
+}
+.electric{
+    background: linear-gradient(to right bottom, rgb(53, 54, 0) 30%, yellow);
+
+}
+.psychic{
+    background: linear-gradient(to right bottom, rgb(48, 0, 54) 30%, rgb(255, 0, 212));
+
+}
+.ice{
+    background: linear-gradient(to right bottom, rgb(0, 119, 119), aqua);
+
+}
+.dragon{
+    background: linear-gradient(to right bottom, red, yellow);
+
+}
+.shadow{
+    background: linear-gradient(to right bottom, black, gray);
+
+}
+.normal{
+    background: linear-gradient(to right bottom, gray, black);
+
+}

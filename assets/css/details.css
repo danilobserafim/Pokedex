@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+button{
+    position: absolute;
+    height: 32px;
+    width: 32px;
+    background-color: transparent;
+    border: none;
+    top: 16px;
+    left: 16px;
+    cursor: pointer;
+}
+button img {
+    width: 100%;
+    color: white;
+    filter: drop-shadow(0 2px 1px rgb(187, 187, 187));
+}
+
+#containerImage{
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px;
+    justify-content: center;
+    align-items: center;
+}
+#types{
+    position: absolute;
+    top: 64px;
+    right: 32px;
+    display: flex;
+    flex-direction: column;
+}
+#types span{
+    margin-top: -12px;
+    color: white;
+    padding: 4px 12px;
+    background-color: rgba(0, 0, 0, 0.274);
+    font-size: 1.3rem;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#containerImage img{
+    margin-bottom: -60px;
+    height: 100%;
+    filter: drop-shadow(1px 1px 3px rgb(58, 58, 58));
+
+}
+#containerImage h1{
+    font-family: 'roboto', sans-serif;
+    font-size: 5rem;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}
+#cards{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    padding: 0 32px;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+.card h2{
+
+    margin: 32px 0;
+    font-size: 3rem;
+}
+.card span{
+    margin-top: -16px;
+    font-size: 1.5rem;
+}
+
+
+@media (max-width: 915px) {
+    #containerImage h1{
+        font-size: 3rem;
+        margin: 0 16px;
+    }
+    #containerImage img{
+        height: auto;
+        width: 100%;
+        margin-bottom: 0;
+        max-height: 100%;
+    }
+
+}

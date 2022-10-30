@@ -3,13 +3,16 @@ async function SelectPoke(pokeId) {
     const data = await response.json()
     console.log(data.types[0].type.name);
 }
+function ShowDetails(id) {
+    window.location.href = `./pages/details.html?id=${id}`
+}
 async function ShowPokemons() {
     const cards = document.getElementById("cards")
-    await fetch('https://pokeapi.co/api/v2/pokemon?limit=90&offset=0', {method:'get'})
+    await fetch('https://pokeapi.co/api/v2/pokemon?limit=150&offset=0', {method:'get'})
     .then(response => response.json())
     .then(data => data.results.map(async (pokemon, index)=>{
         await fetch(pokemon.url).then(response => response.json()).then(data => {
-            cards.innerHTML += `<li class='card ${data.types[0].type.name}'onClick='alert("${pokemon.name}")'>
+            cards.innerHTML += `<li class='card ${data.types[0].type.name}' onClick='ShowDetails(${index + 1})'>
             <div class='containerTypes'>
             ${data.types.map( typeName => `<span class='type'>${typeName.type.name}</span>`)}
             </div>
