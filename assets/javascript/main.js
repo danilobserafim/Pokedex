@@ -8,7 +8,7 @@ function ShowDetails(id) {
 }
 async function ShowPokemons() {
     const cards = document.getElementById("cards")
-    await fetch('https://pokeapi.co/api/v2/pokemon?limit=150&offset=0', {method:'get'})
+    await fetch('https://pokeapi.co/api/v2/pokemon?limit=100&offset=0', {method:'get'})
     .then(response => response.json())
     .then(data => data.results.map(async (pokemon, index)=>{
         await fetch(pokemon.url).then(response => response.json()).then(data => {
