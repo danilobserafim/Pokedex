@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./assets/css/global.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="./assets/css/types.css">
-
-
-    <title>Pokedex</title>
-</head>
-<body onload="ShowPokemons()">
-    <ol id="cards">
-
-    </ol>
-</body>
-<script src="./assets/javascript/main.js">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./assets/css/global.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="./assets/css/types.css">
+        
+        
+        <title>Pokedex</title>
+    </head>
+    <body onload="ShowPokemons(0)">
+        <h2>Pokedex</h2>
+        <ol id="cards">
+            
+        </ol>
+        <div id="groupBtnPagination">
+            <button onclick="ShowPokemons(1)" class="btnPagination">1</button>
+            <button onclick="ShowPokemons(2)" class="btnPagination">2</button>
+            <button onclick="ShowPokemons(3)" class="btnPagination">3</button>
+            <button onclick="ShowPokemons(4)" class="btnPagination">4</button>
+            <button onclick="ShowPokemons(5)" class="btnPagination">5</button>
+            <button onclick="ShowPokemons(6)" class="btnPagination">6</button>
+            <button onclick="ShowPokemons(7)" class="btnPagination">7</button>
+            <button onclick="ShowPokemons(8)" class="btnPagination">8</button>
+        </div>
+    </body>
+    <script src="./assets/javascript/main.js"></script>
     
-</script>
 </html>

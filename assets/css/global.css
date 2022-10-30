@@ -3,6 +3,30 @@
     margin: 0;
     padding: 0;
 }
+#groupBtnPagination{
+    position: absolute;
+    top: 220px;
+    right: 64px;
+}
+.btnPagination{
+    padding: 8px;
+    margin: 4px;
+    cursor: pointer;
+}
+h2{
+    font-size: 5rem;
+    text-align: center;
+    padding: 56px 0;
+    margin: 32px 0;
+    background: url('../images/pokebola.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    color: white;
+    text-shadow: 2px 2px 5px red;
+    filter: drop-shadow(-2px -2px 3px rgb(107, 107, 107));
+    
+}
 #cards{
     display: flex;
     list-style: none;
@@ -13,7 +37,7 @@
 }
 .card{
     position: relative;
-    width: 150px;
+    width: 130px;
     background-color: whitesmoke;
     color: white;
     padding: 0 8px;
@@ -24,10 +48,18 @@
     align-items: flex-end;
 
     cursor: pointer;
+    transition: 0.5s;
+
+
 }
 .card:hover{
+    transition: 0.1s;
     filter: brightness(1.1);
-    box-shadow: 2px 2px 5px rgb(0, 0, 0), inset 1px 1px 1px rgb(255, 255, 255);
+    box-shadow: 2px 2px 3px rgb(82, 82, 82), inset 1px 1px 1px rgb(255, 255, 255);
+
+}
+.card:active{
+    box-shadow: 0 0 0 transparent, inset 1px 1px 1px rgb(0, 0, 0);
 
 }
 
@@ -58,6 +90,17 @@
     font-size: medium;
     margin: 8px 0;
     width: 100%;
+}
+
+@media (max-width: 600px) {
+    h2{
+        font-size: 3rem;
+        padding: 40px;
+    }
+    #groupBtnPagination{
+        top: 152px;
+        right: 32px;
+    }
 }
 
 
