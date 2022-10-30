@@ -56,6 +56,7 @@ button img {
     font-size: 5rem;
     color: white;
     text-shadow: 1px 1px 3px black;
+    
 }
 #cards{
     display: flex;
@@ -88,6 +89,7 @@ button img {
     }
     #containerImage h1{
         font-size: 3rem;
+        margin-top: -8px;
     }
     #containerImage img{
         height: auto;
