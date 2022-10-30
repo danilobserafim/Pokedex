@@ -10,7 +10,6 @@ body{
 #groupBtnPagination{
     margin: 0 auto;
     display: flex;
-    gap: 8px;
     width: fit-content;
 }
 .btnPagination{
