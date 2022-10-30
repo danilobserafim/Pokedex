@@ -80,6 +80,9 @@ button img {
 
 
 @media (max-width: 915px) {
+    #containerImage{
+        height: auto;
+    }
     #containerImage h1{
         font-size: 3rem;
         margin: 0 16px;
