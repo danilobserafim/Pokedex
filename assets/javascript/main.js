@@ -13,7 +13,7 @@ async function ShowPokemons() {
     
     const cards = document.getElementById("cards")
     cards.innerHTML = ''
-    await fetch(`https://pokeapi.co/api/v2/pokemon?limit=66&offset=${thisPage? thisPage * 11: 0}`, {method:'get'})
+    await fetch(`https://pokeapi.co/api/v2/pokemon?limit=66&offset=${thisPage ? (thisPage-1) * 66: thisPage}`, {method:'get'})
     .then(response => response.json())
     .then(data => data.results.map(async (pokemon)=>{
 
@@ -22,7 +22,7 @@ async function ShowPokemons() {
             <div class='containerTypes'>
             ${data.types.map( typeName => `<span class='type'>${typeName.type.name}</span>`)}
             </div>
-            <img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${data.id}.svg' class='cardImg'/>
+            <img src=${data.sprites.other.dream_world.front_default ? data.sprites.other.dream_world.front_default : "./assets/images/no_foto.png"} class='cardImg'/>
             <h1 class='pokeName'>${pokemon.name}</h1>
             </li>
             `

@@ -8,7 +8,7 @@ async function DetailsPokemon(id) {
         title.innerText = `Detalhes: ${data.name}`
         pageDetails.innerHTML += `
         <div id='containerImage' class='${data.types[0].type.name}'>
-            <img src='${data.sprites.other.dream_world.front_default}' />
+            <img src='${data.sprites.other.dream_world.front_default ? data.sprites.other.dream_world.front_default : "../assets/images/no_foto.png"}' />
             <h1>${data.name}</h1>
             <div id='types'>${data.types.map( typeName => `<span class='type'>${typeName.type.name}</span>`)}</div>
         </div>
