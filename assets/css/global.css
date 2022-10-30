@@ -33,7 +33,7 @@
 
 .containerTypes{
     position: absolute;
-    top: 32px;
+    top: 24px;
     left: 8px;
     display: flex;
     flex-direction: column;
