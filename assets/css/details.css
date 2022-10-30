@@ -93,6 +93,7 @@ button img {
         height: auto;
         max-height: 90vh;
         margin-bottom: 0;
+        max-width: 90%;
     }
     .card{
         border: none;
