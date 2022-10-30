@@ -84,6 +84,7 @@ button img {
 @media (max-width: 915px) {
     #containerImage{
         height: auto;
+        max-height: 100vh;
     }
     #containerImage h1{
         font-size: 3rem;
