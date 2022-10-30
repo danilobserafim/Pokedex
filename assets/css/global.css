@@ -1,0 +1,133 @@
+*{
+    font-family: 'roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#cards{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: space-around;
+
+}
+.card{
+    position: relative;
+    width: 150px;
+    background-color: whitesmoke;
+    color: white;
+    padding: 0 8px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    cursor: pointer;
+}
+.card:hover{
+    filter: brightness(1.1);
+    box-shadow: 2px 2px 5px rgb(0, 0, 0), inset 1px 1px 1px rgb(255, 255, 255);
+
+}
+
+.containerTypes{
+    position: absolute;
+    top: 32px;
+    left: 8px;
+    display: flex;
+    flex-direction: column;
+}
+.type{
+    padding: 4px 8px;
+    background-color: rgba(245, 245, 220, 0.356);
+    border-radius: 50px;
+    text-align: center;
+    font-size: small;
+    margin-top: -16px;
+}
+
+.cardImg{
+    height: 60px;
+    margin-top: 8px;
+    max-width: 80px;
+    filter: drop-shadow(1px 1px 3px rgb(58, 58, 58));
+}
+.pokeName{
+    text-shadow: 1px 1px 2px black;
+    font-size: medium;
+    margin: 8px 0;
+    width: 100%;
+}
+
+
+.water{
+    background: linear-gradient(to right bottom, aqua, blue);
+}
+.grass{
+    background: linear-gradient(to right bottom, green, white);
+
+}
+.fire{
+    background: linear-gradient(to right bottom, red, pink);
+}
+.rock{
+    background: linear-gradient(to right bottom, gray, white);
+
+}
+.poison{
+    background: linear-gradient(to right bottom, yellowgreen, green);
+}
+.flying{
+    background: linear-gradient(to right bottom, aqua, black);
+}
+.fighting{
+    background: linear-gradient(to right bottom, red, rgb(82, 0, 0));
+}
+.dark{
+    background: linear-gradient(to right bottom, purple, black);
+
+}
+.fairy{
+    background: linear-gradient(to right bottom, rgb(0, 131, 65), aqua);
+    
+}
+.ground{
+    background: linear-gradient(to right bottom, rgb(44, 0, 0), rgb(180, 0, 0));
+
+}
+.bug{
+    background: linear-gradient(to right bottom, green, yellowgreen);
+}
+.ghost{
+    background: linear-gradient(to right bottom, rgb(255, 0, 191), rgb(58, 0, 43));
+
+}
+.steel{
+    background: linear-gradient(to right bottom, rgb(31, 31, 31), rgb(192, 192, 192),rgb(126, 126, 126));
+
+}
+.electric{
+    background: linear-gradient(to right bottom, rgb(53, 54, 0) 30%, yellow);
+
+}
+.psychic{
+    background: linear-gradient(to right bottom, rgb(48, 0, 54) 30%, rgb(255, 0, 212));
+
+}
+.ice{
+    background: linear-gradient(to right bottom, rgb(0, 119, 119), aqua);
+
+}
+.dragon{
+    background: linear-gradient(to right bottom, red, yellow);
+
+}
+.shadow{
+    background: linear-gradient(to right bottom, black, gray);
+
+}
+.normal{
+    background: linear-gradient(to right bottom, gray, black);
+
+}
