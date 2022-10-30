@@ -4,6 +4,10 @@
     box-sizing: border-box;
     font-family: 'roboto', sans-serif;
 }
+body{
+    background-color: #050529;
+    color: white;
+}
 button{
     position: absolute;
     height: 32px;
@@ -30,7 +34,7 @@ button img {
 }
 #types{
     position: absolute;
-    top: 64px;
+    top: 32px;
     right: 32px;
     display: flex;
     flex-direction: column;

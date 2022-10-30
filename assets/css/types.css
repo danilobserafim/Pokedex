@@ -45,7 +45,7 @@
 
 }
 .electric{
-    background: linear-gradient(to right bottom, rgb(99, 100, 0) 30%, yellow);
+    background: linear-gradient(to right bottom, rgb(201, 204, 0) 30%, rgb(255, 255, 109));
 
 }
 .psychic{
@@ -53,11 +53,11 @@
 
 }
 .ice{
-    background: linear-gradient(to right bottom, rgb(0, 119, 119), aqua);
+    background: linear-gradient(to right bottom, rgb(0, 78, 78), aqua);
 
 }
 .dragon{
-    background: linear-gradient(to right bottom, red, yellow);
+    background: linear-gradient(to right bottom, rgb(223, 0, 0), rgb(255, 163, 163));
 
 }
 .shadow{
@@ -65,6 +65,6 @@
 
 }
 .normal{
-    background: linear-gradient(to right bottom, gray, black);
+    background: linear-gradient(to right bottom, rgb(2, 48, 0), rgb(40, 253, 32));
 
 }
