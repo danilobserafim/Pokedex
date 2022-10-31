@@ -8,7 +8,7 @@ body{
     background-color: #050529;
     color: white;
 }
-button{
+#btnBack{
     position: absolute;
     height: 32px;
     width: 32px;
@@ -18,7 +18,7 @@ button{
     left: 16px;
     cursor: pointer;
 }
-button img {
+#btnBack img {
     width: 100%;
     color: white;
     filter: drop-shadow(0 2px 1px rgb(187, 187, 187));
@@ -31,6 +31,22 @@ button img {
     gap: 64px;
     justify-content: center;
     align-items: center;
+}
+.positionArrows{
+    position: absolute;
+    top: 40%;
+    height: 60px;
+    z-index: 2;
+}
+.backPokemon{
+    left: 16px;
+    filter: drop-shadow(1px 1px 2px white);
+    max-width: 60px;    
+}
+.nextPokemon{
+    right: 16px;
+    filter: drop-shadow(1px 1px 2px white);
+    max-width: 60px;
 }
 #types{
     position: absolute;
@@ -87,9 +103,16 @@ button img {
 
 
 @media (max-width: 950px) {
+    .backPokemon{
+        left: 0;
+    }
+    .nextPokemon{
+        right: 0;
+    }
     #containerImage{
+        flex-direction: column;
         padding: 32px;
-        height: auto;
+        height: 80vh;
         gap: 8px;
     }
     #containerImage h1{
