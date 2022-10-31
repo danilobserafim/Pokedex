@@ -9,7 +9,7 @@ async function DetailsPokemon(id) {
     await fetch(`https://pokeapi.co/api/v2/pokemon/${id}/`).then(response => response.json()).then((data, index) => {
         title.innerText = `Detalhes: ${data.name}`
         pageDetails.innerHTML += `
-        <a href="../index.html?page=${data.id / 66 < 1 ? 1 : Number.parseInt(data.id / 66)+1}" id="btnBack"><img src="../assets/images/Google_material_icons_arrow_back_24px.svg.png" alt="X" ></a>        
+        <a href="../?page=${data.id / 66 < 1 ? 1 : Number.parseInt(data.id / 66)+1}" id="btnBack"><img src="../assets/images/Google_material_icons_arrow_back_24px.svg.png" alt="X" ></a>        
 
         <div id='containerImage' class='${data.types[0].type.name}'>
         <a href='./details.html?id=${data.id >= 1 && data.id - 1}'class='backPokemon positionArrows ' ><img src='../assets/images/left-arrow.png'/></a>
