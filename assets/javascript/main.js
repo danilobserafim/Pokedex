@@ -8,7 +8,7 @@ async function ShowPokemons() {
 
     const cards = document.getElementById("cards")
     
-    await fetch(`https://pokeapi.co/api/v2/pokemon?limit=66&offset=${thisPage > 0 ? (thisPage - 1) * 66: thisPage}`)
+    await fetch(`https://pokeapi.co/api/v2/pokemon?limit=66&offset=${thisPage > 0 ? (thisPage - 1) * 66: 1}`)
     .then(response => response.json())
     .then(async fullListPokemons => {   
         var sorted = [];
