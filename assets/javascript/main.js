@@ -1,33 +1,29 @@
 const urlParams = new URLSearchParams(window.location.search);
 const thisPage = urlParams.get('page')
 
-async function SelectPoke(pokeId) {
-    const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokeId}/` ,{method:'get'})
-    const data = await response.json()
-    console.log(data.types[0].type.name);
-}
 function ShowDetails(id) {
     window.location.href = `./pages/details.html?id=${id}`
 }
 async function ShowPokemons() {
-    
-    const cards = document.getElementById("cards")
-    cards.innerHTML = ''
-    await fetch(`https://pokeapi.co/api/v2/pokemon?limit=66&offset=${thisPage ? (thisPage-1) * 66: thisPage}`, {method:'get'})
-    .then(response => response.json())
-    .then(data => data.results.map(async (pokemon)=>{
 
-        await fetch(pokemon.url).then(response => response.json()).then(data => {
-            cards.innerHTML += `<li class='card ${data.types[0].type.name}' onClick='ShowDetails(${data.id})'>
+    const cards = document.getElementById("cards")
+    
+    await fetch(`https://pokeapi.co/api/v2/pokemon?limit=66&offset=${thisPage > 0 ? (thisPage - 1) * 66: thisPage}`)
+    .then(response => response.json())
+    .then(async fullListPokemons => {   
+        var sorted = [];
+        for (let i = 0; i < 66; i++) {
+            sorted[i] = await fetch(`https://pokeapi.co/api/v2/pokemon/${((thisPage - 1) * 66 + i + 1 )}/`).then(response => response.json()).then(data => data)
+        }  
+        sorted.map(poke=>{
+            cards.innerHTML += `<li class='card ${poke.types[0].type.name}' onClick='ShowDetails(${poke.id})'>
             <div class='containerTypes'>
-            ${data.types.map( typeName => `<span class='type'>${typeName.type.name}</span>`)}
+            ${poke.types.map( typeName => `<span class='type'>${typeName.type.name}</span>`)}
             </div>
-            <img src=${data.sprites.other.dream_world.front_default ? data.sprites.other.dream_world.front_default : "./assets/images/no_foto.png"} class='cardImg'/>
-            <h1 class='pokeName'>${pokemon.name}</h1>
+            <img src=${poke.sprites.other.dream_world.front_default ? poke.sprites.other.dream_world.front_default : "./assets/images/no_foto.png"} class='cardImg'/>
+            <h1 class='pokeName'>${poke.name}</h1>
             </li>
             `
-
-        } )
-        
-    }))
+        })  
+    })
 }
