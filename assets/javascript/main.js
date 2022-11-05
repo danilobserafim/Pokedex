@@ -13,13 +13,8 @@ async function ShowPokemons() {
     const menuPage = document.getElementById(`page${thisPage}`)
     menuPage.style.color = 'gray'
 
-
-    var sorted = [];
     for (let i = 0; i < 66; i++) {
-        sorted[i] = await fetch(`https://pokeapi.co/api/v2/pokemon/${(thisPage - 1) * 66 + i + 1 }/`).then(response => response.json()).then(data => data)
-    }  
-    
-    sorted.map(poke=>{
+        var poke = await fetch(`https://pokeapi.co/api/v2/pokemon/${(thisPage - 1) * 66 + i + 1 }/`).then(response => response.json()).then(data => data)
         cards.innerHTML += `<li class='card ${poke.types[0].type.name}' onClick='ShowDetails(${poke.id})'>
         <div class='containerTypes'>
         ${poke.types.map( typeName => `<span class='type'>${typeName.type.name}</span>`)}
@@ -28,5 +23,5 @@ async function ShowPokemons() {
         <h1 class='pokeName'>${poke.name}</h1>
         </li>
         `
-    })
+    }  
 }
