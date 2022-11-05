@@ -6,7 +6,7 @@
 
 }
 .fire{
-    background: linear-gradient(to right bottom, red, rgb(255, 149, 100));
+    background: linear-gradient(to right bottom, red, rgb(255, 127, 22));
 }
 .rock{
     background: linear-gradient(to right bottom, gray, rgb(204, 204, 204));
