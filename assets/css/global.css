@@ -39,14 +39,17 @@ body{
 
 }
 .card{
+
+
+
+
     position: relative;
     width: 150px;
-    background-color: whitesmoke;
+    height: 100px;
     color: white;
     padding: 0 8px;
     border-radius: 10px;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
 
@@ -80,15 +83,14 @@ body{
 
 .cardImg{
     height: 60px;
-    margin-top: 8px;
-    max-width: 80px;
     filter: drop-shadow(1px 1px 3px rgb(58, 58, 58));
+    max-width: 80px;
+    margin-bottom: 16px;
 }
 .pokeName{
     text-shadow: 1px 1px 2px black;
     font-size: medium;
-    margin: 8px 0;
-    width: 100%;
+    margin: 0 0 8px 0;
 }
 
 @media (max-width: 600px) {

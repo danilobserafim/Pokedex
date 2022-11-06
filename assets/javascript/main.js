@@ -22,12 +22,12 @@ async function ShowPokemons() {
         
     }  
     pokemons.map(pokemon =>{
-        cards.innerHTML += `<li class='card ${pokemon.types[0].type.name}' onClick='ShowDetails(${pokemon.id})'>
+        cards.innerHTML += `<li class='${pokemon.types[0].type.name} card' onClick='ShowDetails(${pokemon.id})'>
         <div class='containerTypes'>
         ${pokemon.types.map( typeName => `<span class='type'>${typeName.type.name}</span>`)}
         </div>
-        <img src=${pokemon.sprites.other.dream_world.front_default ? pokemon.sprites.other.dream_world.front_default : "./assets/images/no_foto.png"} class='cardImg'/>
         <h1 class='pokeName'>${pokemon.name}</h1>
+        <img src=${pokemon.sprites.other.dream_world.front_default ? pokemon.sprites.other.dream_world.front_default : "./assets/images/no_foto.png"} class='cardImg'/>
         </li>
         `
     })

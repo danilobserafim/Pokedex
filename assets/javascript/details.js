@@ -3,7 +3,6 @@ const pageDetails = document.getElementById("details")
 const btnBack = document.getElementsByTagName('button')
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get('id')
-btnBack.onclick = () => window.location.href = `../../`
 
 async function DetailsPokemon(id) {
     await fetch(`https://pokeapi.co/api/v2/pokemon/${id}/`).then(response => response.json()).then((data) => {
@@ -11,7 +10,7 @@ async function DetailsPokemon(id) {
         pageDetails.innerHTML += `
         <a href="../?page=${data.id / 60 < 1 ? 1 : Math.ceil(data.id / 66)}" id="btnBack"><img src="../assets/images/Google_material_icons_arrow_back_24px.svg.png" alt="X" ></a>        
 
-        <div id='containerImage' class='${data.types[0].type.name}' ">
+        <div id='containerImage' class='${data.types[0].type.name}'>
         <a href='./details.html?id=${id > 1 ? data.id - 1:1}'class='backPokemon positionArrows' ><img src='../assets/images/left-arrow.png'/></a>
 
             <img src='${data.sprites.other.dream_world.front_default ? data.sprites.other.dream_world.front_default : "../assets/images/no_foto.png"}' id='imgPokemon'/>

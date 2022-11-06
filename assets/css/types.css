@@ -1,70 +1,148 @@
+:root{
+    --image: url('../images/pokeball.png')
+}
+
 .water{
     background:rgb(61, 143, 143); 
+    background-image: url('../images/pokeball.png');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: 100% 40%;
 }
 .grass{
     background: rgb(0, 175, 0);
-
+    background-image: url('../images/pokeball.png');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: 100% 40%;
 }
 .fire{
     background: red;
+    background-image: url('../images/pokeball.png');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: 100% 40%;
 }
 .rock{
     background: gray;
-
+    background-image: url('../images/pokeball.png');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: 100% 40%;
 }
 .poison{
     background: rgb(47, 116, 41);
+    background-image: url('../images/pokeball.png');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: 100% 40%;
 }
 .flying{
     background: rgb(52, 175, 175);
+    background-image: url('../images/pokeball.png');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: 100% 40%;
 }
 .fighting{
     background: rgb(185, 152, 91);
+    background-image: url('../images/pokeball.png');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: 100% 40%;
 }
 .dark{
     background: rgb(116, 66, 116);
+    background-image: url('../images/pokeball.png');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: 100% 40%;
 
 }
 .fairy{
     background: rgb(43, 59, 112);
+    background-image: url('../images/pokeball.png');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: 100% 40%;
     
 }
 .ground{
     background: brown;
+    background-image: url('../images/pokeball.png');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: 100% 40%;
 
 }
 .bug{
     background: yellowgreen;
+    background-image: url('../images/pokeball.png');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: 100% 40%;
 }
 .ghost{
     background: rgb(56, 56, 114);
+    background-image: url('../images/pokeball.png');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: 100% 40%;
 
 }
 .steel{
     background: steelblue;
+    background-image: url('../images/pokeball.png');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: 100% 40%;
 
 }
 .electric{
     background: rgb(201, 204, 0);
+    background-image: url('../images/pokeball.png');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: 100% 40%;
 
 }
 .psychic{
     background:  rgb(110, 0, 124);
+    background-image: url('../images/pokeball.png');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: 100% 40%;
 
 }
 .ice{
     background: rgb(100, 230, 230) ;
+    background-image: url('../images/pokeball.png');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: 100% 40%;
 
 }
 .dragon{
     background: rgb(255, 183, 50);
+    background-image: url('../images/pokeball.png');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: 100% 40%;
 
 }
 .shadow{
     background: #000;
+    background-image: url('../images/pokeball.png');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: 100% 40%;
 
 }
 .normal{
     background: rgb(209, 209, 209);
+    background-image: url('../images/pokeball.png');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: 100% 40%;
 
 }
