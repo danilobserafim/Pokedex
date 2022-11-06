@@ -14,7 +14,7 @@ async function DetailsPokemon(id) {
         <div id='containerImage' class='${data.types[0].type.name}' ">
         <a href='./details.html?id=${id > 1 ? data.id - 1:1}'class='backPokemon positionArrows' ><img src='../assets/images/left-arrow.png'/></a>
 
-            <img src='${data.sprites.other.dream_world.front_default ? data.sprites.other.dream_world.front_default : "../assets/images/no_foto.png"}' />
+            <img src='${data.sprites.other.dream_world.front_default ? data.sprites.other.dream_world.front_default : "../assets/images/no_foto.png"}' id='imgPokemon'/>
             <h1>${data.name}</h1>
             <a href='./details.html?id=${data.id + 1}' class='nextPokemon positionArrows '><img src='../assets/images/right-arrow.png'/></a>
             <div id='types'>${data.types.map( typeName => `<span class='type'>${typeName.type.name}</span>`)}</div>
