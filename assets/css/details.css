@@ -117,11 +117,11 @@ body{
         gap: 8px;
     }
     #containerImage h1{
-        font-size: 4rem;
+        font-size: 3rem;
     }
     #containerImage img{
         height: auto;
-        max-height: 80vh;
+        max-height: 70vh;
         margin-bottom: 0;
         max-width: 90%;
     }
