@@ -12,7 +12,8 @@ async function ShowPokemons() {
      
     const menuPage = document.getElementById(`page${thisPage}`)
     menuPage.style.color = 'gray'
-
+    menuPage.href = '#'
+    
     for (let i = 0; i < 60; i++) {
         
         var poke = await fetch(`https://pokeapi.co/api/v2/pokemon/${(thisPage - 1) * 66 + i + 1 }/`).then(response => response.json()).then(data => data)

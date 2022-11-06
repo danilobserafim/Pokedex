@@ -121,7 +121,7 @@ body{
     }
     #containerImage img{
         height: auto;
-        max-height: 90vh;
+        max-height: 80vh;
         margin-bottom: 0;
         max-width: 90%;
     }
