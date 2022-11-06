@@ -124,6 +124,9 @@ body{
         margin-bottom: 0;
         max-width: 90%;
     }
+    .positionArrows{
+        height: 48px;
+    }
     #types{
         top: 32px;
         right: 16px;
