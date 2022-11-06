@@ -112,9 +112,9 @@ body{
     }
     #containerImage{
         flex-direction: column;
+        flex-wrap: nowrap;
         padding: 32px;
         height: 65vh;
-        gap: 8px;
     }
     #containerImage h1{
         font-size: 3rem;
@@ -123,9 +123,6 @@ body{
         max-height: 60%;
         margin-bottom: 0;
         max-width: 90%;
-    }
-    .card{
-        border: none;
     }
     #types{
         top: 32px;
