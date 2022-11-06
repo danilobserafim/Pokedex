@@ -120,7 +120,6 @@ body{
         font-size: 3rem;
     }
     #containerImage img{
-        height: auto;
         max-height: 60%;
         margin-bottom: 0;
         max-width: 90%;
