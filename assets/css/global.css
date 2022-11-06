@@ -5,8 +5,15 @@
     overflow: unset;
 }
 body{
-    background-color: #050529;
+    background-color: #000050;
+    display: flex;
+    flex-direction: column;
+
 }
+#banner{
+    padding: 32px 0;
+}
+
 #groupBtnPagination{
     margin: 0 auto;
     display: flex;
@@ -16,20 +23,12 @@ body{
     padding: 8px;
     margin: 4px;
     cursor: pointer;
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
-h2{
-    font-size: 5rem;
-    text-align: center;
-    margin: 32px 0;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    color: white;
-    text-shadow: 2px 2px 5px red;
-    filter: drop-shadow(-2px -2px 3px rgb(107, 107, 107));
-    
+#banner{
+    margin: 0 auto;
+    justify-content: center;
 }
 #cards{
     display: flex;
@@ -41,7 +40,7 @@ h2{
 }
 .card{
     position: relative;
-    width: 130px;
+    width: 150px;
     background-color: whitesmoke;
     color: white;
     padding: 0 8px;
@@ -59,13 +58,9 @@ h2{
 .card:hover{
     transition: 0.1s;
     filter: brightness(1.1);
-    box-shadow: 2px 2px 3px rgb(82, 82, 82), inset 1px 1px 1px rgb(255, 255, 255);
 
 }
-.card:active{
-    box-shadow: 0 0 0 transparent, inset 1px 1px 1px rgb(0, 0, 0);
 
-}
 
 .containerTypes{
     position: absolute;
@@ -108,6 +103,16 @@ h2{
     .btnPagination{
         font-size: 0.8rem;
     }
+    #cards{
+        justify-content: space-around;
+    }
+    .card{
+        width: 42%;
+    }
+    #banner{
+        width: 60vw;
+    }
+    
 }
 
 

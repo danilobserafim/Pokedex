@@ -113,7 +113,7 @@ body{
     #containerImage{
         flex-direction: column;
         padding: 32px;
-        height: 80vh;
+        height: 65vh;
         gap: 8px;
     }
     #containerImage h1{

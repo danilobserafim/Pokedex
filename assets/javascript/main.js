@@ -13,8 +13,10 @@ async function ShowPokemons() {
     const menuPage = document.getElementById(`page${thisPage}`)
     menuPage.style.color = 'gray'
 
-    for (let i = 0; i < 66; i++) {
+    for (let i = 0; i < 60; i++) {
+        
         var poke = await fetch(`https://pokeapi.co/api/v2/pokemon/${(thisPage - 1) * 66 + i + 1 }/`).then(response => response.json()).then(data => data)
+
         cards.innerHTML += `<li class='card ${poke.types[0].type.name}' onClick='ShowDetails(${poke.id})'>
         <div class='containerTypes'>
         ${poke.types.map( typeName => `<span class='type'>${typeName.type.name}</span>`)}

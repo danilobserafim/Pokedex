@@ -1,70 +1,70 @@
 .water{
-    background: linear-gradient(to right bottom, rgb(0, 197, 197), blue);
+    background:rgb(61, 143, 143); 
 }
 .grass{
-    background: linear-gradient(to right bottom, rgb(0, 66, 0), rgb(123, 255, 163));
+    background: rgb(0, 175, 0);
 
 }
 .fire{
-    background: linear-gradient(to right bottom, red, rgb(255, 127, 22));
+    background: red;
 }
 .rock{
-    background: linear-gradient(to right bottom, gray, rgb(204, 204, 204));
+    background: gray;
 
 }
 .poison{
-    background: linear-gradient(to right bottom, rgb(126, 0, 0), rgb(185, 0, 202));
+    background: rgb(47, 116, 41);
 }
 .flying{
-    background: linear-gradient(to right bottom, rgb(0, 197, 197), rgb(0, 53, 53));
+    background: rgb(52, 175, 175);
 }
 .fighting{
-    background: linear-gradient(to right bottom, rgb(255, 64, 64), rgb(82, 0, 0));
+    background: rgb(185, 152, 91);
 }
 .dark{
-    background: linear-gradient(to right bottom, purple, rgb(34, 0, 34));
+    background: rgb(116, 66, 116);
 
 }
 .fairy{
-    background: linear-gradient(to right bottom, blue, rgb(66, 0, 128));
+    background: rgb(43, 59, 112);
     
 }
 .ground{
-    background: linear-gradient(to right bottom, rgb(44, 0, 0), rgb(180, 0, 0));
+    background: brown;
 
 }
 .bug{
-    background: linear-gradient(to right bottom, green, yellowgreen);
+    background: yellowgreen;
 }
 .ghost{
-    background: linear-gradient(to right bottom, rgb(255, 0, 191), rgb(58, 0, 43));
+    background: rgb(56, 56, 114);
 
 }
 .steel{
-    background: linear-gradient(to right bottom, rgb(31, 31, 31), rgb(192, 192, 192),rgb(78, 78, 78));
+    background: steelblue;
 
 }
 .electric{
-    background: linear-gradient(to right bottom, rgb(201, 204, 0) 30%, rgb(255, 255, 109));
+    background: rgb(201, 204, 0);
 
 }
 .psychic{
-    background: linear-gradient(to right bottom, rgb(48, 0, 54) 30%, rgb(255, 0, 212));
+    background:  rgb(110, 0, 124);
 
 }
 .ice{
-    background: linear-gradient(to right bottom, rgb(0, 78, 78), aqua);
+    background: rgb(100, 230, 230) ;
 
 }
 .dragon{
-    background: linear-gradient(to right bottom, rgb(223, 0, 0), rgb(255, 163, 163));
+    background: rgb(255, 183, 50);
 
 }
 .shadow{
-    background: linear-gradient(to right bottom, black, gray);
+    background: #000;
 
 }
 .normal{
-    background: linear-gradient(to right bottom, rgb(2, 48, 0), rgb(40, 253, 32));
+    background: rgb(209, 209, 209);
 
 }
