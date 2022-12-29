@@ -1,9 +1,9 @@
 <h1>Pokédex</h1>
     <p>Pokédex com 600 exemplares de pokémons</p></br>
-    <img src='https://www.linkpicture.com/q/banner-pokedex.png' alt="Banner" width='100%'/>
+    <img src='./assets/images/readme/banner.png' alt="Banner" width='100%'/>
 
 <h2>instalação</h2>
-    <p>basta acessar esse <a href="./assets/images/readme/banner.png">link</a></p>
+    <p>basta acessar esse <a href="https://danilobserafim.github.io/pokedex">link</a></p>
 
 <h2>Modo de uso</h2>
     <p>Acessar páginas</br>
