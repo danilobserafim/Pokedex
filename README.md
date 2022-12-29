@@ -11,21 +11,21 @@
 • visão geral </br>
 &nbsp lista a versão oficial da "The pokemon company"</br>
 </br>
-• visão em características: lista os pokémons por ordem de tipo</br>
-&nbsp o titulo já é bem descritivo</p>
+• visão em características</br>
+&nbsp lista os pokémons por ordem de tipo</p>
 
 <h2>Técnologias</h2>
-    <p>• HTML5</br>
+<p>• HTML5</br>
 • CSS</br>
 • JAVASCRIPT</p>
 
     
 
 <h2>Licença</h2>
-    <p>ISC</p>
+<p>ISC</p>
 
 <h2>Créditos</h2>
-    <p>Danilo Barbosa Serafim</br>
+<p>Danilo Barbosa Serafim</br>
 Desenvolvedor de software</br>
 • <a href="https://github.com/danilobserafim">Github</a></br>
 • <a href="https://www.linkedin.com/in/danilobserafim/">Linkedin</a></p>
