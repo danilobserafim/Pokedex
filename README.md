@@ -1,4 +1,4 @@
-    <h1>Pokédex</h1>
+<h1>Pokédex</h1>
     <p>Pokédex com 600 exemplares de pokémons</p></br>
     <img src='https://www.linkpicture.com/q/banner-pokedex.png' alt="Banner" width='100%'/>
 
@@ -21,15 +21,12 @@
 
     
 
-    <h2>Licença</h2>
-    <p>ISC</p>
+    
 
     <h2>Créditos</h2>
     <p>Danilo Barbosa Serafim</br>
     Desenvolvedor de software</br>
     • <a href="https://github.com/danilobserafim">Github</a></br>
-    • <a href="https://www.linkedin.com/in/danilobserafim/">Linkedin</a></br>
-    </br>
-    </p>
+    • <a href="https://www.linkedin.com/in/danilobserafim/">Linkedin</a></p>
 
     
