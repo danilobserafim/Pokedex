@@ -13,7 +13,17 @@ body{
 #banner{
     padding: 32px 0;
 }
-
+#menuTypes{
+    display: flex;
+    margin: 16px 0;
+    justify-content: center;
+    gap: 8px;
+}
+#menuTypes a{
+    text-decoration: none;
+    padding: 4px;
+    color: white;
+}
 #groupBtnPagination{
     margin: 0 auto;
     display: flex;
